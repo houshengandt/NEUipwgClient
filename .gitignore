@@ -48,3 +48,4 @@ Temporary Items
 NEUipwgClient/.idea/.name
 *.xml
 NEUipwgClient/.idea/NEUipwgClient.iml
+*.pyc
