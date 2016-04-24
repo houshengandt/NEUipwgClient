@@ -1,143 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Form</class>
- <widget class="QWidget" name="Form">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>380</width>
-    <height>275</height>
+    <width>469</width>
+    <height>210</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>469</width>
+    <height>210</height>
+   </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>380</width>
-    <height>275</height>
+    <width>469</width>
+    <height>232</height>
    </size>
   </property>
-  <property name="windowTitle">
-   <string>Form</string>
+  <property name="acceptDrops">
+   <bool>false</bool>
   </property>
-  <widget class="QTabWidget" name="tabWidget">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>380</width>
-     <height>275</height>
-    </rect>
+  <property name="windowTitle">
+   <string>校园网客户端</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icon.png</normaloff>icon.png</iconset>
+  </property>
+  <property name="accessibleName">
+   <string/>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>469</width>
+     <height>210</height>
+    </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>380</width>
-     <height>275</height>
+     <width>469</width>
+     <height>210</height>
     </size>
    </property>
-   <property name="currentIndex">
-    <number>0</number>
-   </property>
-   <widget class="QWidget" name="tab_xyw">
-    <attribute name="title">
-     <string>页</string>
-    </attribute>
-    <widget class="QCheckBox" name="checkBox_jzmm">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>469</width>
+      <height>210</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>469</width>
+      <height>210</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>469</width>
+      <height>210</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QLabel" name="label_info">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
      <property name="geometry">
       <rect>
-       <x>130</x>
-       <y>150</y>
+       <x>290</x>
+       <y>0</y>
+       <width>181</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(225, 225, 225);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
        <width>71</width>
-       <height>16</height>
+       <height>31</height>
       </rect>
      </property>
      <property name="text">
-      <string>CheckBox</string>
+      <string>校园网账号：</string>
      </property>
     </widget>
-    <widget class="QCheckBox" name="checkBox_zddl">
+    <widget class="QLabel" name="label_3">
      <property name="geometry">
       <rect>
-       <x>220</x>
-       <y>150</y>
+       <x>30</x>
+       <y>70</y>
        <width>71</width>
-       <height>16</height>
+       <height>31</height>
       </rect>
      </property>
      <property name="text">
-      <string>CheckBox</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_ljwl">
-     <property name="geometry">
-      <rect>
-       <x>50</x>
-       <y>190</y>
-       <width>75</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>PushButton</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_dklj">
-     <property name="geometry">
-      <rect>
-       <x>160</x>
-       <y>190</y>
-       <width>75</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>PushButton</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_dkqb">
-     <property name="geometry">
-      <rect>
-       <x>270</x>
-       <y>190</y>
-       <width>75</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>PushButton</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_xywzh">
-     <property name="geometry">
-      <rect>
-       <x>43</x>
-       <y>40</y>
-       <width>61</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>TextLabel</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_xywmm">
-     <property name="geometry">
-      <rect>
-       <x>43</x>
-       <y>100</y>
-       <width>61</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>TextLabel</string>
+      <string>校园网密码：</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="lineEdit_xywzh">
      <property name="geometry">
       <rect>
-       <x>130</x>
-       <y>30</y>
-       <width>158</width>
+       <x>122</x>
+       <y>19</y>
+       <width>121</width>
        <height>31</height>
       </rect>
      </property>
@@ -145,133 +139,65 @@
     <widget class="QLineEdit" name="lineEdit_xywmm">
      <property name="geometry">
       <rect>
-       <x>130</x>
-       <y>90</y>
-       <width>158</width>
-       <height>31</height>
-      </rect>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QWidget" name="tab_4">
-    <attribute name="title">
-     <string>页</string>
-    </attribute>
-    <widget class="QLabel" name="label_wfmc">
-     <property name="geometry">
-      <rect>
-       <x>43</x>
-       <y>40</y>
-       <width>61</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>TextLabel</string>
-     </property>
-    </widget>
-    <widget class="QCheckBox" name="checkBox_zdkq">
-     <property name="geometry">
-      <rect>
-       <x>130</x>
-       <y>150</y>
+       <x>122</x>
+       <y>69</y>
        <width>121</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>CheckBox</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_wfmm">
-     <property name="geometry">
-      <rect>
-       <x>43</x>
-       <y>100</y>
-       <width>61</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>TextLabel</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_gbwf">
-     <property name="geometry">
-      <rect>
-       <x>240</x>
-       <y>190</y>
-       <width>75</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>PushButton</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_kqwf">
-     <property name="geometry">
-      <rect>
-       <x>130</x>
-       <y>190</y>
-       <width>75</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>PushButton</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_wfmc">
-     <property name="geometry">
-      <rect>
-       <x>130</x>
-       <y>30</y>
-       <width>158</width>
        <height>31</height>
       </rect>
      </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_wfmm">
+    <widget class="QPushButton" name="pushButton_ljwl">
      <property name="geometry">
       <rect>
-       <x>130</x>
-       <y>90</y>
-       <width>158</width>
+       <x>70</x>
+       <y>150</y>
+       <width>75</width>
        <height>31</height>
       </rect>
      </property>
-    </widget>
-   </widget>
-   <widget class="QWidget" name="tab_5">
-    <attribute name="title">
-     <string>页</string>
-    </attribute>
-    <widget class="QTimeEdit" name="timeEdit">
-     <property name="geometry">
-      <rect>
-       <x>140</x>
-       <y>110</y>
-       <width>71</width>
-       <height>22</height>
-      </rect>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(225, 225, 225);</string>
+     </property>
+     <property name="text">
+      <string>连接网络</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_dsgj">
+    <widget class="QPushButton" name="pushButton_dklj">
      <property name="geometry">
       <rect>
-       <x>143</x>
-       <y>50</y>
-       <width>61</width>
-       <height>20</height>
+       <x>170</x>
+       <y>150</y>
+       <width>75</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(239, 247, 255);
+background-color: rgb(225, 225, 225);</string>
+     </property>
+     <property name="text">
+      <string>断开网络</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_zdlj">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>115</y>
+       <width>121</width>
+       <height>21</height>
       </rect>
      </property>
      <property name="text">
-      <string>TextLabel</string>
+      <string>启动自动连接网络</string>
      </property>
     </widget>
    </widget>
   </widget>
+  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>
