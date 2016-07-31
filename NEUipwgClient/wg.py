@@ -1,17 +1,9 @@
-# import http.cookiejar
 from os import mkdir, chdir, path
 import urllib.request
 import urllib.parse
-import re
 
 
 class IpWg():
-    # def __init__(self):
-    #     self.f = open('doc.txt', 'rt')
-    #     self.user_info = self.f.read()
-    #     # self.user_name, self.user_password = re.split(r'[,\s]\s*', self.user_info)
-    #     self.f.close()
-
     def login(self, u_name, u_password):
         self.login_url = "http://ipgw.neu.edu.cn:803/srun_portal_pc.php?ac_id=1&"
         self.login_data = {'ac_id': '1',
@@ -89,11 +81,5 @@ class IpWg():
             a = open('doc.txt', 'wt')
             a.write("校园网账号,校园网密码,0")
             a.close()
-# def cookiehandler(self):
-#     self.cookie_jar = http.cookiejar.CookieJar()
-#     self.cookie = urllib.request.HTTPCookieProcessor(self.cookie_jar)
-#     self.opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(self.cookie_jar))
-#     urllib.request.install_opener(self.opener)
-#     urllib.request.urlopen(urllib.request.Request("http://ipgw.neu.edu.cn:803/srun_portal_pc.php?ac_id=1&"))
-# IpWg().cookiehandler()
+
 
